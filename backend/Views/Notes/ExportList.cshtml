@@ -1,0 +1,28 @@
+
+@model List<TANA.Models.Notes>
+    @{
+    Layout = "_ReportLayout";
+    }
+    <div id="report-title"><h1></h1></div>
+    <table class="table table-sm table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>NOTE</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var record in Model)
+            {
+            <tr>
+                <td>@record.notesid</td>
+                <td>@record.title</td>
+                <td>@record.notes</td>
+            </tr>
+            }
+            
+        </tbody>
+    </table>
+    
+    

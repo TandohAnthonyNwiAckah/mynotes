@@ -1,0 +1,179 @@
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.search-result-holder {
+  width: 360px;
+  max-width: 90vw;
+  max-height: 400px;
+  overflow: auto
+}
+/* container component */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+fieldset {
+  border: 2px solid rgba(220, 220, 220, 0.5);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.table-inlined-edit {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.table-inlined-edit:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.q-table thead th {
+  font-weight: bold !important;
+}
+
+/* remove container padding and width when placed in modal  */
+.q-modal .container, .q-modal .container-fluid {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset grids when placed in non fluid component */
+.comp-grid .container-fluid, .comp-grid .container, .q-dialog .container-fluid, .q-dialog .container, .q-drawer .container-fluid, .q-drawer .container {
+  padding: 0 !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+/* reset grids when placed in non fluid component */
+.reset-grid .container .comp-grid, .reset-grid .container .comp-grid, .q-dialog .container .comp-grid, .q-dialog .container-fluid .comp-grid, .q-stepper__step-content .container .comp-grid, .q-stepper__step-content .container-fluid .comp-grid, .q-drawer .container .comp-grid, .q-drawer .container-fluid .comp-grid {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.grid-style-transition {
+  transition: transform .28s, background-color .28s;
+}
+
+
+/* radsystems nice shadow for your card component */
+.nice-shadow-1 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nice-shadow-2 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nice-shadow-3 {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.nice-shadow-4 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nice-shadow-5 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.nice-shadow-6 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.nice-shadow-7 {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.nice-shadow-8 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.nice-shadow-9 {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.nice-shadow-10 {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nice-shadow-11 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nice-shadow-12 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.nice-shadow-13 {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nice-shadow-14 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nice-shadow-15 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nice-shadow-16 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.nice-shadow-17 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.nice-shadow-18 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  ;
+}
+
+.nice-shadow-19 {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.nice-shadow-20 {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.nice-shadow-21 {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.nice-shadow-22 {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}

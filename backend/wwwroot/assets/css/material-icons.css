@@ -1,0 +1,96 @@
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('../fonts/Material Icons'),
+       local('../fonts/MaterialIcons-Regular'),
+       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;   /*Preferred icon size */
+	display: inline-flex;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	vertical-align:middle;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+[data-icon]::before {
+	content: attr(data-icon);
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+
+	* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+	
+}
+
+.mi-xxxs{
+	font-size:12px !important;
+}
+.mi-xxs{
+	font-size:14px !important;
+}
+.mi-xs{
+	font-size:18px !important;
+}
+.mi-sm{
+	font-size:24px !important;
+}
+.mi-md{
+	font-size:36px !important;
+}
+.mi-lg{
+	font-size:48px !important;
+}
+.mi-xlg{
+	font-size:64px !important;
+}
+.mi-xxlg{
+	font-size:72px !important;
+}
+.mi-xxxlg{
+	font-size:96px !important;
+}
