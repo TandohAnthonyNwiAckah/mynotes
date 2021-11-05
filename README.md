@@ -6,7 +6,7 @@ This project comes in Two-part namely the Frontend Part and the Backend Part.
 
 The Backend was built using ```ASP.Net Core``` with ```SQL server``` and the Frontend was built using ```Quasar VueJS``` which gives us a lot of opportunities to deploy on multi-platforms.
 
-We built this project currently for the Web using ```Single Page Application (SPA)```.
+Built this project currently for the Web using ```Single Page Application (SPA)```.
 This project doesn’t need to reload the page during its use and works within a browser.
 
 For this project to run perfectly, Both the Backend part (.NET Core) and Frontend Part(Quasar) should be running smoothly.
@@ -17,7 +17,7 @@ Our Backend runs on ```port 8086``` whilst the Frontend on ```port 8085``` when 
 
 ## ***PREVIEW***
 
-| HOME PAGE | DONET RUN |QUASAR DEV |
+| HOME PAGE | DOTNET RUN |QUASAR DEV |
 |     ------------- | ------------- | ------------- |
 | ![Main Page](screenshots/s0.JPG)| ![Main Page](screenshots/s1.JPG)|![Main Page](screenshots/s2.JPG)|
 
@@ -25,7 +25,7 @@ Our Backend runs on ```port 8086``` whilst the Frontend on ```port 8085``` when 
 
 
 # FRONTEND PART
-For the frontend to work perfectly, the following should be followed. Navigate to the frontend folder
+For the frontend to work perfectly, the following should be followed. Navigate to the ```frontend folder```
  first
 
 
@@ -45,6 +45,13 @@ quasar dev
 quasar build
 ```
 
+### Frontend Local URL
+```bash
+http://localhost:8050
+```
+
+
+
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
@@ -53,7 +60,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 # BACKEND PART
 
-For the backend to work perfectly, the following should be followed. Make sure ASP.Net Core SDK is downloaded on your system
+For the backend to work perfectly, the following should be followed. Make sure ```ASP.Net Core SDK``` is downloaded on your system.
 
 ### Test the version of ASP.DOTNET CORE
 ```bash
@@ -65,3 +72,27 @@ donet --version
 donet run
 ```
 
+
+### Backend Local API
+```bash
+http://localhost:8050
+```
+
+
+
+# TOOLS USED
+- GIT and GITHUB
+- VS CODE
+- POSTMAN
+- MS SQL SERVER MANAGEMENT STUDIO
+
+
+
+
+# TODO
+
+[x] Launch the project on a live server.
+
+[x] Custom domain and ssl.
+
+[x] User Interface design.
