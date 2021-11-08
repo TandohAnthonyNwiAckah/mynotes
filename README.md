@@ -11,7 +11,7 @@ This project doesn’t need to reload the page during its use and works within a
 
 For this project to run perfectly, Both the Backend part (.NET Core) and Frontend Part(Quasar) should be running smoothly.
 
-Our Backend runs on ```port 8086``` whilst the Frontend on ```port 8085``` when running it locally.
+Backend runs on ```port 8086``` whilst the Frontend on ```port 8085``` when running it locally.
 
 
 
@@ -64,12 +64,12 @@ For the backend to work perfectly, the following should be followed. Make sure `
 
 ### Test the version of ASP.DOTNET CORE
 ```bash
-donet --version
+dotnet --version
 ```
 
 ### Run the Backend locally using the below command
 ```bash
-donet run
+dotnet run
 ```
 
 
