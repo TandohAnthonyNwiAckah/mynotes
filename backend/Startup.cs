@@ -55,6 +55,10 @@ namespace TANA
             );
 
 
+
+            
+
+
 			services.AddHttpContextAccessor();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }

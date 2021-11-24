@@ -95,12 +95,17 @@ namespace TANA.Controller{
 					var exportRecords = query.ToList();
 					return await ExportRecords(exportRecords, "ExportList");
 				}
+
+
 				int total_records = query.Count();
+
+
 				int currentPage = ((page - 1) * limit);
 				var records = query.Skip(currentPage).Take(limit).ToList();
 				int record_count = records.Count;
 				double t = total_records / limit;
 				int total_page = (int)Math.Ceiling(t);
+				
 				var result = new { records, total_records, record_count, total_page};
 				return Ok(result);
 			}
