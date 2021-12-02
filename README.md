@@ -101,8 +101,10 @@ http://localhost:8050
 
 # TODO
 
-[x] Launch the project on a live server.
+- [x] Containerize Backend
 
-[x] Custom domain and ssl.
+- [] Launch the project on a live server.
+
+- [-] Custom domain and ssl.
 
 
