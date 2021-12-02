@@ -103,7 +103,7 @@ http://localhost:8050
 
 - [x] Containerize Backend
 
-- [] Launch the project on a live server.
+- [ ] Launch the project on a live server.
 
 - [-] Custom domain and ssl.
 
