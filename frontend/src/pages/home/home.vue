@@ -21,7 +21,7 @@
                 <div class="row q-col-gutter-md">
                     <div class="col-sm-4 col-md-4 col-12 comp-grid">
                         <record-count api-path="components_data/getcount_notes" max="" v-slot="record">
-                        <q-btn align="left"  unelevated    :rounded="true"  block no-caps text-color="white" color="red" :to="`notes`" padding="md" class="full-width animated zoomIn">
+                        <q-btn align="left"  unelevated    :rounded="true"  block no-caps text-color="white" color="blue" :to="`notes`" padding="md" class="full-width animated zoomIn">
                             <q-icon class=" q-mr-md" color="blue-1" style="opacity:1" size="40px" name="event_note"></q-icon>
                             <div class="flex-column text-left">
                                 <div class="text-bold">NOTES</div>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="col-sm-4 col-md-4 col-12 comp-grid">
                         <record-count api-path="components_data/getcount_remarque" max="" v-slot="record">
-                        <q-btn align="left"  unelevated    :rounded="true"  block no-caps text-color="white" color="yellow" :to="`notes`" padding="md" class="full-width animated zoomIn">
+                        <q-btn align="left"  unelevated    :rounded="true"  block no-caps text-color="white" color="amber" :to="`notes`" padding="md" class="full-width animated zoomIn">
                             <q-icon class=" q-mr-md" color="white" style="opacity:1" size="40px" name="library_books"></q-icon>
                             <div class="flex-column text-left">
                                 <div class="text-bold">REMARQUE</div>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-sm-4 col-md-4 col-12 comp-grid">
                         <record-count api-path="components_data/getcount_all" max="" v-slot="record">
-                        <q-btn align="left"  unelevated    :rounded="true"  block no-caps text-color="white" color="green" :to="`notes`" padding="md" class="full-width animated zoomIn">
+                        <q-btn align="left"  unelevated    :rounded="true"  block no-caps text-color="white" color="purple" :to="`notes`" padding="md" class="full-width animated zoomIn">
                             <q-icon class=" q-mr-md" color="white" style="opacity:1" size="40px" name="all_inclusive"></q-icon>
                             <div class="flex-column text-left">
                                 <div class="text-bold">ALL</div>

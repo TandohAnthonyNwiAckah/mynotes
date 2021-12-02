@@ -8,7 +8,7 @@
                             <div class="">
                                 <api-data-source   api-path="components_data/notes_languagecode_option_list"  v-slot="req">
                                     <div class="">
-                                        <q-btn-dropdown icon="language" label="Select Language" rounded color="primary" class="full-width">
+                                        <q-btn-dropdown icon="language" label="Select Language" rounded color="brown" class="full-width">
                                             <q-list dense rounded nav>
                                                 <q-item v-for="(option, index) in req.response" :active="filters.notes_languagecode == option.value" :key="index" @click="setFilter(option, 'notes_languagecode')" v-ripple clickable v-close-popup>
                                                     <q-item-section>{{ option.label }}</q-item-section>
@@ -36,6 +36,8 @@
                 </div>
             </q-card>
         </template>
+
+        
         <section class="page-section q-mb-md">
             <div class="container-fluid">
                 <div class="row q-col-gutter-md">
@@ -70,19 +72,26 @@
                                         :pagination.sync="pagination"
                                         @request="setPagination" 
                                         no-data-label="No Record Found">
+
+                                        
                                         <template v-slot:item="props">
                                             <div class="col-sm-6 col-md-3 col-12">
                                                 <q-card  :bordered="false" class="nice-shadow-18">
                                                     <q-item>
                                                         <q-item-section>
-                                                            <q-item-label v-ripple @click="navigateTo(`/notes/view/${props.row.title}`)" class="text-primary text-bold cursor-pointer" lines="2">{{ props.row.title }}</q-item-label>
+                                                            <q-item-label v-ripple @click="navigateTo(`/notes/view/${props.row.title}`)" class="text-bold cursor-pointer" lines="2">{{ props.row.title }}</q-item-label>
                                                             <q-item-label class="text-caption" lines="2">{{ props.row.notes }}</q-item-label>
                                                         </q-item-section>
+
+
                                                         <q-item-section side top class="text-right">
                                                             <q-card-actions class="row q-col-gutter-xs justify-end">
                                                                 <q-btn icon="menu" padding="xs" round flat color="grey">
                                                                     <q-menu transition-show="flip-right"  transition-hide="flip-left" self="center middle" anchor="center middle">
                                                                         <q-list dense rounded nav>
+                                                                         
+                                                                         
+                                                                         
                                                                             <q-item link clickable v-ripple :to="`/notes/view/${props.row.title}`">
                                                                                 <q-item-section>
                                                                                     <q-icon color="primary"  size="sm" name="visibility"></q-icon>
@@ -105,6 +114,8 @@
                                                                                 </q-item-section>
                                                                                 <q-item-section>Delete</q-item-section>
                                                                             </q-item>
+
+
                                                                         </q-list>
                                                                     </q-menu>
                                                                 </q-btn>
@@ -135,19 +146,19 @@
                                                 <div class="row justify-between">
                                                     <div class="row q-col-gutter-md">
                                                         <div>
-                                                            <q-btn v-if="exportButton"    :rounded="true"  no-caps  unelevated   color="accent" class="q-my-xs" padding="xs" @click="openExportPage()" label="Export"  title="Export" icon="print">
+                                                            <q-btn v-if="exportButton"    :rounded="true"  no-caps  unelevated   color="indigo" class="q-my-xs" padding="xs" @click="openExportPage()" label="Export"  title="Export" icon="print">
                                                             </q-btn>
                                                         </div>
                                                         <div>
                                                             <import-data label="Select a file to import" ref="dataimport" upload-path="notes/importdata">
-                                                            <q-btn class="q-my-xs" @click="$refs.dataimport.openDialog()" icon="import_export"    :rounded="true"  no-caps  unelevated   color="accent" padding="xs" label="Import Data" >
+                                                            <q-btn class="q-my-xs" @click="$refs.dataimport.openDialog()" icon="import_export"    :rounded="true"  no-caps  unelevated   color="deep-orange" padding="xs" label="Import Data" >
                                                             </q-btn>
                                                             </import-data>
                                                         </div>
                                                     </div>
                                                     <div v-if="paginate && totalRecords > 0" class="row q-col-gutter-md justify-center">
                                                         <div class="col-auto">
-                                                            <q-chip>Records {{recordsPosition}} of {{totalRecords}}</q-chip>
+                                                            <q-chip >Records {{recordsPosition}} of {{totalRecords}}</q-chip>
                                                         </div>
                                                         <div>
                                                             <q-pagination  color="primary" flat glossy  input v-model="pagination.page" :direction-links="true" :boundary-links="true" :max-pages="5" :boundary-numbers="true" :max="totalPages"></q-pagination>
@@ -165,6 +176,8 @@
             </section>
         </div>
     </template>
+  
+  
     <script>
 	import { PageMixin } from "../../mixins/page.js";
 	import { ListPageMixin } from "../../mixins/listpage.js";

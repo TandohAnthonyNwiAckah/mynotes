@@ -3,6 +3,8 @@
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 #pragma warning disable CS8604 // Possible null reference argument.
 #pragma warning disable CS8629 // Nullable value type may be null.
+
+
 namespace TANA.Controller{
 	using System;
 	using Microsoft.AspNetCore.Mvc;
@@ -49,7 +51,6 @@ namespace TANA.Controller{
 			
 		}
 		
-
 		/// <summary>
 		/// List  Notes records
 		/// Support searching, filtering and ordering of table records
@@ -107,14 +108,23 @@ namespace TANA.Controller{
 				int total_page = (int)Math.Ceiling(t);
 				
 				var result = new { records, total_records, record_count, total_page};
+
+
+               // Displaying the result API
 				return Ok(result);
+
+
+
+                // If I want to pass the record to the view 
+				// return View(records);
+
+
 			}
 			catch (Exception ex){
 				return StatusCode(500, $"{ex}");
 			}
 		}
 	
-
 	/// <summary>
 	/// Import csv file data into Notes
 	/// </summary>

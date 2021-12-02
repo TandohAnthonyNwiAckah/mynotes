@@ -1,9 +1,6 @@
-#nullable enable
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-#pragma warning disable CS8604 // Possible null reference argument.
-#pragma warning disable CS8629 // Nullable value type may be null.
+
 namespace TANA.Controller{
+	
 	using System;
 	using Microsoft.AspNetCore.Mvc;
 	using System.Collections.Generic;

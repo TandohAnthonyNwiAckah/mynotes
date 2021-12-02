@@ -17,9 +17,9 @@ Backend runs on ```port 8086``` whilst the Frontend on ```port 8085``` when runn
 
 ## ***PREVIEW***
 
-| HOME PAGE | DOTNET RUN |QUASAR DEV |
+| HOME PAGE | EXPORT |DETAILS PAGE|
 |     ------------- | ------------- | ------------- |
-| ![Main Page](screenshots/s0.JPG)| ![Main Page](screenshots/s1.JPG)|![Main Page](screenshots/s2.JPG)|
+| ![Main Page](screenshots/s0.png)| ![Main Page](screenshots/s1.png)|![Main Page](screenshots/s2.png)|
 
 
 
@@ -33,6 +33,14 @@ For the frontend to work perfectly, the following should be followed. Navigate t
 ```bash
 npm install
 ```
+
+
+>Make sure  Quasar CLI is installed before running quasar
+
+```
+npm install -g @quasar/cli 
+```
+
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
@@ -81,10 +89,12 @@ http://localhost:8050
 
 
 # TOOLS USED
+- Docker
 - GIT and GITHUB
 - VS CODE
 - POSTMAN
 - MS SQL SERVER MANAGEMENT STUDIO
+- Azure Data Studio (Mac User)
 
 
 
@@ -95,4 +105,4 @@ http://localhost:8050
 
 [x] Custom domain and ssl.
 
-[x] User Interface design.
+
