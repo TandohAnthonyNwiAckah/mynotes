@@ -105,6 +105,6 @@ http://localhost:8050
 
 - [ ] Launch the project on a live server.
 
-- [-] Custom domain and ssl.
+- [ ] Custom domain and ssl.
 
 
