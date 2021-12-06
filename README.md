@@ -87,7 +87,11 @@ dotnet run
 
 ### Backend Local API
 ```bash
+<<<<<<< HEAD
 http://localhost:8006
+=======
+http://localhost:8060
+>>>>>>> 7f4ddfcb59aa47e77cbf951e204b612ae53f6067
 ```
 
 
@@ -107,8 +111,8 @@ http://localhost:8006
 
 - [x] Containerize Backend
 
-- [] Launch the project on a live server.
+- [ ] Launch the project on a live server.
 
-- [-] Custom domain and ssl.
+- [ ] Custom domain and ssl.
 
 

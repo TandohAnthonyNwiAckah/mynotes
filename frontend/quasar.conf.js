@@ -49,8 +49,19 @@ module.exports = function (/* ctx */) {
 		vueRouterMode: 'hash', // available values: 'hash', 'history'
 		env: {
 			APP_NAME: 'MyNotes',
-			API_URL: 'http://localhost:8006/',
-			API_PATH: 'http://localhost:8006/api/'
+
+
+			// Using it locally
+			// API_URL: 'http://localhost:8006/',
+			// API_PATH: 'http://localhost:8006/api/'
+
+
+			//Using it on Docker
+			API_URL: 'http://localhost:8080/',
+			API_PATH: 'http://localhost:8080/api/'
+
+
+
 		},
 		// transpile: false,
   
