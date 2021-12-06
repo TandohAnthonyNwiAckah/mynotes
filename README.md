@@ -87,13 +87,55 @@ dotnet run
 
 ### Backend Local API
 ```bash
-<<<<<<< HEAD
+
 http://localhost:8006
-=======
-http://localhost:8060
->>>>>>> 7f4ddfcb59aa47e77cbf951e204b612ae53f6067
+
 ```
 
+
+
+# Running on Docker
+
+Change ConnectionStrings in the appsettings from
+
+
+````
+	"DefaultConnectionString": "Server=localhost,1433; Database=MYNOTES; User Id=SA; Password=yourStrong(!)Password;"
+````
+
+TO
+
+
+````
+	"DefaultConnectionString": "Server=host.docker.internal,1433; Database=MYNOTES; User Id=SA; Password=yourStrong(!)Password;"
+````
+
+
+Comments url  ```//.UseUrls("http://localhost:8006"); ``` in the Program.cs
+
+
+
+Run the  command ````docker run -p 8080:80 tanacom/mynotes````  run the API.
+
+you can Test the API in the browser http://localhost:8080/api/notes  using port 8080.
+
+
+Connect the new API to the frontend Part.
+
+ When running locally.
+````
+			API_URL: 'http://localhost:8006/',
+			API_PATH: 'http://localhost:8006/api/'
+
+````
+
+
+When running in Docker.
+````
+			API_URL: 'http://localhost:8080/',
+			API_PATH: 'http://localhost:8080/api/'
+
+````
 
 
 # TOOLS USED
@@ -103,6 +145,8 @@ http://localhost:8060
 - POSTMAN
 - MS SQL SERVER MANAGEMENT STUDIO
 - Azure Data Studio (Mac User)
+
+
 
 
 
