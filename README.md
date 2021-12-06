@@ -11,7 +11,8 @@ This project doesn’t need to reload the page during its use and works within a
 
 For this project to run perfectly, Both the Backend part (.NET Core) and Frontend Part(Quasar) should be running smoothly.
 
-Backend runs on ```port 8086``` whilst the Frontend on ```port 8085``` when running it locally.
+Backend runs on ```port 8006``` whilst the Frontend on ```port 8007``` when running it locally.
+
 
 
 
@@ -55,7 +56,7 @@ quasar build
 
 ### Frontend Local URL
 ```bash
-http://localhost:8050
+http://localhost:8007
 ```
 
 
@@ -69,13 +70,16 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 # BACKEND PART
 
 For the backend to work perfectly, the following should be followed. Make sure ```ASP.Net Core SDK``` is downloaded on your system.
+Chnage the ConnectionStrings in the appsettings to match your own.
+
 
 ### Test the version of ASP.DOTNET CORE
+
 ```bash
 dotnet --version
 ```
-
-### Run the Backend locally using the below command
+Navigate to the backend folder  and 
+run the below command
 ```bash
 dotnet run
 ```
@@ -83,7 +87,7 @@ dotnet run
 
 ### Backend Local API
 ```bash
-http://localhost:8050
+http://localhost:8006
 ```
 
 

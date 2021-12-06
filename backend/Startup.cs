@@ -91,23 +91,22 @@ namespace TANA
             {
             //   endpoints.MapDefaultControllerRoute(); 
 
+
+            	// app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapControllerRoute(
+            //         name: "listfilter",
+            //         pattern: "api/{controller=Home}/{action=Index}/{fieldname}/{fieldvalue}");
+            // });
+
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "api/{controller=Home}/{action=Index}/{id?}");
 
             });
 
-			app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "listfilter",
-                    pattern: "api/{controller=Home}/{action=Index}/{fieldname}/{fieldvalue}");
-            });
-
-
-
-
-
+		
         }
     }
 }

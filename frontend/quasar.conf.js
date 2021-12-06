@@ -49,8 +49,8 @@ module.exports = function (/* ctx */) {
 		vueRouterMode: 'hash', // available values: 'hash', 'history'
 		env: {
 			APP_NAME: 'MyNotes',
-			API_URL: 'http://localhost:8060/',
-			API_PATH: 'http://localhost:8060/api/'
+			API_URL: 'http://localhost:8006/',
+			API_PATH: 'http://localhost:8006/api/'
 		},
 		// transpile: false,
   
@@ -76,7 +76,7 @@ module.exports = function (/* ctx */) {
 	  // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
 	  devServer: {
 		https: false,
-		port: 8050,
+		port: 8007,
 		open: true // opens browser window automatically
 		
 	  },

@@ -92,6 +92,7 @@ namespace TANA.Controller{
 					string notes_languagecode = Request.Query["notes_languagecode"];
 					query = query.Where("languagecode == @0",  notes_languagecode);
 				}
+				
 				if (Request.Query.ContainsKey("export")){
 					var exportRecords = query.ToList();
 					return await ExportRecords(exportRecords, "ExportList");
