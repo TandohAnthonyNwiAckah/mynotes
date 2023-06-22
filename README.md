@@ -1,4 +1,4 @@
-# MY NOTES v1.0.0
+# MY NOTES  APP v1.0.0
 A simple Web Application for a client to view the 
 ```stored content``` in their preferred language.
 The display is data stored in a database in multiple languages ```(English and French)```
