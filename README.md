@@ -1,8 +1,13 @@
 # MY NOTES  APP v1.0.0
-A simple Web Application for a client to view the 
-```stored content``` in their preferred language.
-The display is data stored in a database in multiple languages ```(English and French)```
+
+## Capture, organize, and never forget a thought with My Note App – your ultimate digital notebook.
+
+The ```My Note App``` is a comprehensive and user-friendly note-taking application that aims to enhance productivity and organization. With its ```intuitive interface, seamless synchronization across devices, advanced organization features```, and robust security measures, the app provides a convenient and secure platform for users to capture, manage, and access their notes. It offers a streamlined note-taking experience, allowing users to focus on their thoughts and ideas without distractions. The app's synchronization feature ensures that notes are always up-to-date and accessible across multiple devices, enabling users to seamlessly switch between devices while maintaining a consistent note-taking workflow. Advanced organization capabilities, such as ``tagging``, make it easy to categorize and search for specific information, ensuring efficient note retrieval. The app also prioritizes the security and privacy of user data, employing encryption techniques and secure communication protocols. 
+
+Overall, the ```My Note App``` is designed to be a reliable and user-centric tool that empowers individuals to capture and organize their ideas effectively, thereby boosting productivity and facilitating seamless information management.
+
 This project comes in Two-part namely the Frontend Part and the Backend Part.
+
 
 The Backend was built using ```ASP.Net Core``` with ```SQL server``` and the Frontend was built using ```Quasar VueJS``` which gives us a lot of opportunities to deploy on multi-platforms.
 
@@ -155,7 +160,7 @@ When running in Docker.
 
 - [x] Containerize Backend
 
-- [ ] Launch the project on a live server.
+- [x] Launch the project on a live server.
 
 - [ ] Custom domain and ssl.
 
